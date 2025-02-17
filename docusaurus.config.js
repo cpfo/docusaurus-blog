@@ -48,7 +48,8 @@ const config = {
           // Remove this to remove the "edit this page" links.
           editUrl:
             'https://github.com/cpfo/docusaurus-blog/tree/master/',
-          routeBasePath: '/', // Serve the docs at the site's root
+          routeBasePath: '/', // Serve the docs at the site's root,
+          showLastUpdateTime: true
         },
         blog: {
           showReadingTime: true,
@@ -104,6 +105,14 @@ const config = {
           },
           {to: '/blog', label: 'Blog', position: 'left'},
           {
+            type: 'docsVersionDropdown',
+            position: 'right'
+          },
+          {
+            type: 'localeDropdown',
+            position: 'right'
+          },
+          {
             href: 'https://github.com/cpfo/docusaurus-blog',
             label: 'GitHub',
             position: 'right',
@@ -118,7 +127,7 @@ const config = {
             items: [
               {
                 label: 'Tutorial',
-                to: '/docs/intro',
+                to: '/intro',
               },
             ],
           },
