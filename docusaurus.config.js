@@ -104,10 +104,10 @@ const config = {
             label: 'api文档',
           },
           {to: '/blog', label: 'Blog', position: 'left'},
-          {
-            type: 'docsVersionDropdown',
-            position: 'right'
-          },
+          // {
+          //   type: 'docsVersionDropdown',
+          //   position: 'right'
+          // },
           {
             type: 'localeDropdown',
             position: 'right'
